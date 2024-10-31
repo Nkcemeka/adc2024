@@ -25,16 +25,16 @@
             <a href="https://github.com/Nkcemeka/NEK" target="_blank"> Access NEK </a>
           </div>
           <h2 id="special">Chord Recognition Approach</h2>
-          <p>To reiterate, NEK is a music education software plugin that functions as a MIDI or audio chord recognition tool. For audio, NEK utilizes an algorithm by Adam Stark, which breaks down an audio signal into frames and assigns a label based on the residual energy in the chromagram.</p>
+          <p>To reiterate, NEK is a music education software plugin that functions as a MIDI or audio chord recognition tool. For audio, NEK utilizes an algorithm by Adam Stark, which breaks down an audio signal into frames and assigns a label based on the residual energy in the chromagram. In essence, with the aid of a bit mask, the chord label that minimises the calculated residual energy will be assigned as the designated chord.</p>
           <div class="image-static">
             <img src="assets/audio.drawio.svg" alt="Audio chord recognition" />
           </div>
-          <p>In the case of MIDI events, it projects the state of MIDI messages to a buffer and uses an intuitive approach to name the intended chord irrespective of the chord inversion.</p>
+          <p>In the case of MIDI events, NEK projects the state of MIDI messages to a buffer and uses an intuitive approach to name the intended chord. Not only that, this algorithm is robust to inversions; this means your database just needs to contain the default interval relationships for the chord without a worry about all its corresponding inversions.</p>
           <div class="image-static">
             <img src="assets/midi.drawio.svg" alt="MIDI chord recognition" />
           </div>
           <h2>Contact Me</h2>
-          <p>If you have any questions related to the paper, the algorithm or creating plugins with JUCE, feel free to reach out to me by sending me an email at: NKCEMEKA [AT] gmail [DOT] com</p>
+          <p>If you have any questions related to the paper, the algorithm, or creating plugins with JUCE, feel free to reach out to me by sending me an email at: NKCEMEKA [AT] gmail [DOT] com</p>
         </div>
       </div>
       </div>
