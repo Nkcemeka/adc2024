@@ -16,15 +16,27 @@
         <div class="header">
           <h1>ADC 2024</h1>
           <h2>Simplifying Chord Recognition: A Case Study with NEK</h2>
+          <div class="image">
+            <img src="assets/nek.svg" alt="nek plugin" />
+          </div>
           <p>This case study explores NEK, an open-source MIDI and audio chord recognition plugin, designed to simplify chord detection in educational applications. By analyzing both MIDI and audio inputs, NEK provides an accessible framework for developers aiming to build chord recognition tools. Download the paper below to learn more about the chord recognition algorithms NEK uses and how you can incorporate them. You can also access the NEK plugin to delve into the code or play around with it.</p>
+          <div class="btn">
+            <a href="https://nkcemeka.github.io/adc2024/paper.pdf" target="_blank"> Download Paper </a>
+            <a href="https://github.com/Nkcemeka/NEK" target="_blank"> Access NEK </a>
+          </div>
+          <h2 id="special">Chord Recognition Approach</h2>
+          <p>To reiterate, NEK is a music education software plugin that functions as a MIDI or audio chord recognition tool. For audio, NEK utilizes an algorithm by Adam Stark, which breaks down an audio signal into frames and assigns a label based on the energy in the chromagram.</p>
+          <div class="image-static">
+            <img src="assets/audio.drawio.svg" alt="Audio chord recognition" />
+          </div>
+          <p>In the case of MIDI events, it projects the state of MIDI messages to a buffer and uses an intuitive approach to name the intended chord irrespective of the chord inversion.</p>
+          <div class="image-static">
+            <img src="assets/midi.drawio.svg" alt="MIDI chord recognition" />
+          </div>
+          <h2>Contact Me</h2>
+          <p>If you have any questions related to the paper, the algorithm or creating plugins with JUCE, feel free to reach out to me by sending me an email at: NKCEMEKA [AT] gmail [DOT] com</p>
         </div>
       </div>
-      <div class="btn">
-        <a href="https://nkcemeka.github.io/adc2024/paper.pdf" target="_blank"> Download Paper </a>
-        <a href="https://github.com/Nkcemeka/NEK" target="_blank"> Access NEK </a>
-      </div>
-      <div class="image">
-          <img src="assets/nek.svg" alt="nek plugin" />
       </div>
     </div>
   </body>

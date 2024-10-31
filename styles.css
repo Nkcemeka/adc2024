@@ -27,7 +27,7 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .content {
@@ -37,14 +37,26 @@ body {
 }
 
 .image {
-  margin-top: 1rem;
   width: 100%;
+  margin: 1.5rem;
   animation: nek-animation 3s infinite;
   overflow: hidden;
 }
 
+.image-static{
+  width: 100%;
+  margin: 1.5rem;
+  overflow: hidden;
+}
+
+.image-static img {
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
 .image img {
-  width: 80%;
+  width: 70%;
   display: flex;
   margin: auto;
 }
@@ -102,7 +114,14 @@ body {
 
 .header h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+#special{
+  text-align: center;
+  font-size: 2rem;
   font-weight: 400;
   color: var(--white);
 }
@@ -115,6 +134,32 @@ body {
   color: var(--white);
   cursor: pointer;
   transition: 0.3s;
+}
+
+
+.footer {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials span:hover {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 640px) {
