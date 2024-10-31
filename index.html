@@ -19,17 +19,17 @@
           <div class="image">
             <img src="assets/nek.svg" alt="nek plugin" />
           </div>
-          <p>This case study explores NEK, an open-source MIDI and audio chord recognition plugin, designed to simplify chord detection in educational applications. By analyzing both MIDI and audio inputs, NEK provides an accessible framework for developers aiming to build chord recognition tools. Download the paper below to learn more about the chord recognition algorithms NEK uses and how you can incorporate them. You can also access the NEK plugin to delve into the code or play around with it.</p>
+          <p>This case study explores NEK, an open-source VST3 plugin for MIDI and audio chord recognition, designed to simplify chord detection in educational applications. By analyzing both MIDI and audio inputs, NEK offers an accessible framework for developers aiming to build chord recognition tools. Download the paper below to learn more about the chord recognition algorithms NEK uses and how you can incorporate them. You can also access the NEK plugin to delve into the code or experiment with its features.</p>
           <div class="btn">
             <a href="https://nkcemeka.github.io/adc2024/paper.pdf" target="_blank"> Download Paper </a>
             <a href="https://github.com/Nkcemeka/NEK" target="_blank"> Access NEK </a>
           </div>
           <h2 id="special">Chord Recognition Approach</h2>
-          <p>To reiterate, NEK is a music education software plugin that functions as a MIDI or audio chord recognition tool. For audio, NEK utilizes an algorithm by Adam Stark, which breaks down an audio signal into frames and assigns a label based on the residual energy in the chromagram. In essence, with the aid of a bit mask, the chord label that minimises the calculated residual energy will be assigned as the designated chord.</p>
+          <p>To reiterate, NEK is a music education software plugin that functions as a MIDI or audio chord recognition tool. For audio, NEK utilizes an algorithm by Adam Stark, which breaks down an audio signal into frames and assigns a label based on the residual energy in the chromagram. Essentially, with the aid of a bit mask, the chord label that minimizes the calculated residual energy is assigned as the designated chord.</p>
           <div class="image-static">
             <img src="assets/audio.drawio.svg" alt="Audio chord recognition" />
           </div>
-          <p>In the case of MIDI events, NEK projects the state of MIDI messages to a buffer and uses an intuitive approach to name the intended chord. Not only that, this algorithm is robust to inversions; this means your database just needs to contain the default interval relationships for the chord without a worry about all its corresponding inversions.</p>
+          <p>For MIDI events, NEK projects the state of MIDI messages to a buffer and uses an intuitive approach to name the intended chord. Additionally, the algorithm is robust to inversions, meaning your database only needs to contain the default interval relationships for the chord, without worrying about all its corresponding inversions.</p>
           <div class="image-static">
             <img src="assets/midi.drawio.svg" alt="MIDI chord recognition" />
           </div>
